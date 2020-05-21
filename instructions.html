@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color switch</title>
+        <style>
+            .list-type3{
+margin:0 auto;
+width:80vw;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+}
+ol li {
+    list-style-type: none ;
+}
+
+.list-type3 h1 {
+    color: cornsilk;
+    text-align: center;
+}
+body {
+    background-color: black;
+}
+.list-type3 li, .list-type3 a{
+float:left;
+line-height:35px;
+position:relative;
+font-size:15px;
+margin-bottom: 12px;
+font-family: 'Raleway', sans-serif;
+transition: background-color 0.5s ease;
+}
+.list-type3 a{
+padding:0 12px;
+background:#0089e0;
+color:#fff;
+text-decoration:none;
+border-bottom-right-radius:4px;
+border-top-right-radius:4px;
+}
+
+.list-type3 a:before{
+content:"";
+float:left;
+position:absolute;
+top:0;
+left:-12px;
+width:0;
+height:0;
+border-color:transparent #0089e0 transparent transparent;
+border-style:solid;
+border-width: 18px 12px 18px 0;
+}
+
+.icons img {
+    height: 5vh;
+     width: 5vh;
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     padding: 1vh;
+     cursor: pointer;
+     border-radius: 50%;
+ }
+ 
+
+.list-type3 a:after{
+content:"";
+position:absolute;
+top:15px;
+left:0;
+float:left;
+width:6px;
+height:6px;
+
+border-radius:2px;
+background:#fff;
+box-shadow:-1px -1px 2px #004977;
+}
+.list-type3 a:hover{
+background:#555;
+}
+
+.list-type3 a:hover:before{
+border-color:transparent #0089e0 transparent transparent;
+}
+
+@media screen and (max-width: 400px) {
+    .list-type3 h1 {
+        font-size: 8vw;
+    }
+}
+
+@media screen and (min-width: 557px) {
+    .list-type3 li, .list-type3 a {
+        width: 70vw;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+    <div class="list-type3">
+        <h1>INSTRUCTIONS</h1>
+    <ol>
+    <li><a href="#">The player will be subjected to many obstacles with different number of colors and rotating in different directions</a></li>
+    <li><a href="#">Difficulty levels 1-5 are based on speed of rotation of obstacles</a></li>
+    <li><a href="#">Do not resize screen while playing. This game is suitable to play in mobile as well</a></li>
+    <li><a href="#">Collecting 2 consecutive coins will slow down the rotation of next few obstacles that you cross within a specified time</a></li>
+    <li><a href="#">Tap to restart option allows you restart with same settings</a></li>
+    <li><a href="#">Stars are like checkpoints for the distance covered which help you increase score.</a></li>
+    <li><a href="#">White outlined blue stars are equivalent to travelling 10 checkpoints and morever they give you a power up ball that can pass through all obstacles</a></li>
+    <li><a href="#">But beware the power up ball has a life span of only 10 seconds</a></li>
+    <li><a href="#">Colliding with wrong color or falling down results in 'GAME OVER'</a></li>
+    <li><a href="#">Try to make it to the top 10 in the leaderboard. All the best!</a></li>
+    <li><a href="#">Press 'P' to pause the game while playing</a></li>
+    <li><a href="#">In multiplayermode the player who has high score wins, but a player can continue playing to achieve a high score even if other player has lost</a></li>
+    <li><a href="#">Use 'u' and 'up arrow' to play in multiplayer mode</a></li>
+    </ol>
+    <div class='icons'>
+        <img src="assets/images/home.png" alt="Home" onclick="window.location.href='index.html'">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>COLOR SWITCH</title>
+<link rel="stylesheet" href="css/styles2.css">
+
+
+
+<body>
+    <div class="container">
+        <div class="flip-card" onclick="modals('playGame')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>PLAY GAME</h1>
+                <span>Enjoy playing color switch!</span>
+              </div>
+              <div class="flip-card-back">
+                <img src="assets/images/preview.png" alt="Game Preview" style="width:100%;height:31.8vh;">
+              </div>
+            </div>
+          </div>
+          <div class="flip-card" onclick="window.location.href='instructions.html'">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>RULES</h1>
+                <span>Want to know how to play the game?</span>
+              </div>
+              <div class="flip-card-back">
+                <img src="assets/images/instruction.PNG" alt="instructions" style="width: 100%;height:31.8vh;">
+              </div>
+            </div>
+          </div>
+          <div class="flip-card" onclick="window.location.href='highScores.html'">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>HIGH SCORES</h1>
+                <span>Have a look at the leaderboard!</span>
+              </div>
+              <div class="flip-card-back">
+                <img src="assets/images/highScore.png" alt="High Scores" style="width: 100%;height:31.8vh;">
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="myModal" class="modal1">
+      <div class="modal-content1">
+          <div class="modal-header1">
+          <span class="close1">&times;</span>
+          <h2></h2>
+          </div>
+          <div class="modal-body1" id='bodyMargin'>
+          
+          </div>
+          <div class="modal-footer1">
+          <h5>Made by NITT@edu</h5>
+          </div>
+      </div>
+      </div>
+	
+<canvas id="canv" width="32" height="32">
+  <script src='javascript/indexAction.js'></script>	
+</body>    
+</html> 
